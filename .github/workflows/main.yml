@@ -47,6 +47,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/LinuxAPP:latest
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/LinuxAPP:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/LinuxAPP:buildcache,mode=max
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/linux:latest
+          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/linux:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/linux:buildcache,mode=max
